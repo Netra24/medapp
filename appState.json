@@ -1,0 +1,96 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "fdc21998-4650-4067-ad75-a7ccbb208c6d": {
+        "id": "fdc21998-4650-4067-ad75-a7ccbb208c6d",
+        "parent": null,
+        "name": "MedApp.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "MedApp.js",
+        "cursor": {
+          "lineNumber": 32,
+          "column": 3
+        },
+        "config": {
+          "runtime": "nodejs10.x",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": [],
+          "name": "MedApp"
+        },
+        "triggers": [
+          {
+            "resourceName": "httpApiguploadToS3Api",
+            "config": {
+              "defaultRoute": false,
+              "method": "PUT",
+              "route": "/upload"
+            }
+          }
+        ],
+        "lastUpdated": 1606194477921
+      }
+    },
+    "openFiles": [
+      "fdc21998-4650-4067-ad75-a7ccbb208c6d"
+    ],
+    "currentFileId": "fdc21998-4650-4067-ad75-a7ccbb208c6d",
+    "resources": {
+      "httpApiguploadToS3Api": {
+        "name": "httpApiguploadToS3Api",
+        "type": "API_GATEWAY",
+        "config": {
+          "apiType": 2,
+          "mode": 0,
+          "apiName": "uploadToS3Api",
+          "stageName": "audio",
+          "corsConfig": {
+            "maxAge": 0,
+            "allowCredentials": false
+          }
+        }
+      }
+    },
+    "customTemplate": {
+      "syntax": "JSON",
+      "overrideDefault": false,
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "sigmaVersion": "1.4.4.1",
+    "projectName": "MedApp",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-2",
+    "platform": "AWS",
+    "language": "nodejs",
+    "platformRegions": {},
+    "lastSave": 1606194706014
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "medapp",
+      "url": "https://github.com/Netra24/medapp"
+    }
+  }
+}
