@@ -24,7 +24,7 @@ exports.handler = async (event) => {
             Body: fileContent,
             Metadata: {}
         }).promise();
-        return "Successful";
+        return `https://medicalreport.s3.us-east-2.amazonaws.com/${fileName}.txt`;
 
     } catch (err) {
         return err;

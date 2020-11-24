@@ -11,8 +11,8 @@
         "isRemovable": true,
         "filePath": "MedApp.js",
         "cursor": {
-          "lineNumber": 26,
-          "column": 22
+          "lineNumber": 27,
+          "column": 83
         },
         "config": {
           "runtime": "nodejs10.x",
@@ -32,7 +32,7 @@
             }
           }
         ],
-        "lastUpdated": 1606194477921
+        "lastUpdated": 1606198335748
       }
     },
     "openFiles": [
@@ -82,15 +82,14 @@
         "name": "ses-netra.chandrasekhar@vitap.ac.in",
         "type": "SES",
         "config": {
-          "selectedIdentity": "netra.chandrasekhar@vitap.ac.in",
-          "projectRegion": "us-east-2"
+          "selectedIdentity": "netra.chandrasekhar@vitap.ac.in"
         }
       }
     },
     "customTemplate": {
       "syntax": "JSON",
       "overrideDefault": false,
-      "dialect": null,
+      "dialect": "CloudFormation",
       "definitions": null
     },
     "envVariables": [
