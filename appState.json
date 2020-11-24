@@ -11,8 +11,8 @@
         "isRemovable": true,
         "filePath": "MedApp.js",
         "cursor": {
-          "lineNumber": 26,
-          "column": 29
+          "lineNumber": 49,
+          "column": 1
         },
         "config": {
           "runtime": "nodejs10.x",
@@ -76,6 +76,14 @@
           "bucket": {
             "name": "medicalaudiofiles"
           }
+        }
+      },
+      "ses-netra.chandrasekhar@vitap.ac.in": {
+        "name": "ses-netra.chandrasekhar@vitap.ac.in",
+        "type": "SES",
+        "config": {
+          "selectedIdentity": "netra.chandrasekhar@vitap.ac.in",
+          "projectRegion": "us-east-2"
         }
       }
     },
