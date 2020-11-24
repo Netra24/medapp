@@ -133,16 +133,6 @@
                     "s3:PutObject"
                   ],
                   "Resource": "arn:aws:s3:::medicalaudiofiles/*"
-                },
-                {
-                  "Effect": "Allow",
-                  "Action": [
-                    "SES:SendEmail",
-                    "SES:SendRawEmail"
-                  ],
-                  "Resource": [
-                    "arn:aws:ses:us-east-2:129803728197:identity/netra.chandrasekhar@vitap.ac.in"
-                  ]
                 }
               ]
             }

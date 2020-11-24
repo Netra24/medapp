@@ -11,8 +11,8 @@
         "isRemovable": true,
         "filePath": "MedApp.js",
         "cursor": {
-          "lineNumber": 49,
-          "column": 1
+          "lineNumber": 26,
+          "column": 22
         },
         "config": {
           "runtime": "nodejs10.x",
