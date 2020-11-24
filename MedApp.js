@@ -16,7 +16,6 @@ exports.handler = async (event) => {
     let extension = contentType ? mime.extension(contentType) : '';
 
     let fullFileName = extension ? `${fileName}.${extension}` : fileName;
-
     try {
         let data = await s3.putObject({
             Bucket: "medicalaudiofiles",
@@ -24,9 +23,10 @@ exports.handler = async (event) => {
             Body: fileContent,
             Metadata: {}
         }).promise();
-        return { "message": "Successfully uploaded" };
+        return "Successful";
 
     } catch (err) {
-        return { "message": err };
+        // error handling goes here
     };
+
 };

@@ -11,8 +11,8 @@
         "isRemovable": true,
         "filePath": "MedApp.js",
         "cursor": {
-          "lineNumber": 32,
-          "column": 3
+          "lineNumber": 26,
+          "column": 29
         },
         "config": {
           "runtime": "nodejs10.x",
@@ -24,7 +24,7 @@
         },
         "triggers": [
           {
-            "resourceName": "httpApiguploadToS3Api",
+            "resourceName": "httpApiguploadToS3",
             "config": {
               "defaultRoute": false,
               "method": "PUT",
@@ -53,6 +53,30 @@
             "allowCredentials": false
           }
         }
+      },
+      "httpApiguploadToS3": {
+        "name": "httpApiguploadToS3",
+        "type": "API_GATEWAY",
+        "config": {
+          "apiType": 2,
+          "mode": 0,
+          "apiName": "uploadToS3",
+          "stageName": "audio",
+          "corsConfig": {
+            "maxAge": 0,
+            "allowCredentials": false
+          }
+        }
+      },
+      "s3medicalaudiofiles": {
+        "name": "s3medicalaudiofiles",
+        "type": "S3",
+        "config": {
+          "mode": 1,
+          "bucket": {
+            "name": "medicalaudiofiles"
+          }
+        }
       }
     },
     "customTemplate": {
@@ -72,7 +96,21 @@
       }
     ],
     "packageJSON": {
-      "dependencies": {}
+      "dependencies": {
+        "aws-sdk": {
+          "name": "aws-sdk",
+          "language": "nodejs",
+          "version": "2.644.0",
+          "dev": true,
+          "notRemovable": false
+        },
+        "mime-types": {
+          "name": "mime-types",
+          "version": "2.1.27",
+          "dev": false,
+          "language": "nodejs"
+        }
+      }
     }
   },
   "PROJECT_META": {

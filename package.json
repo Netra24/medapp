@@ -1,6 +1,10 @@
 {
   "name": "MedApp",
   "version": "1.0.0",
-  "dependencies": {},
-  "devDependencies": {}
+  "dependencies": {
+    "mime-types": "2.1.27"
+  },
+  "devDependencies": {
+    "aws-sdk": "2.644.0"
+  }
 }
